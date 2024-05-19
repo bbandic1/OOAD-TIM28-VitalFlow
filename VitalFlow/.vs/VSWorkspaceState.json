@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\VitalFlow"
+    "\\VitalFlow\\Areas",
+    "\\VitalFlow\\bin",
+    "\\VitalFlow\\Controllers",
+    "\\VitalFlow\\Data",
+    "\\VitalFlow\\obj",
+    "\\VitalFlow\\wwwroot",
+    "\\VitalFlow\\wwwroot\\css",
+    "\\VitalFlow\\wwwroot\\js",
+    "\\VitalFlow\\wwwroot\\lib"
   ],
   "SelectedNode": "\\VitalFlow.sln",
   "PreviewInSolutionExplorer": false

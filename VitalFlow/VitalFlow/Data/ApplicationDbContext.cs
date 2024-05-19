@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Reflection.Emit;
 
 namespace VitalFlow.Data
 {
@@ -8,13 +11,15 @@ namespace VitalFlow.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-            public DbSet<Korisnik> Korisnik { get; set; }
-            public DbSet<Zahtjev> Zahtjev { get; set; }
-            public DbSet<Termin> Termin { get; set; }
-            public DbSet<Zahtjev_Hub> Zahtjev_Hub { get; set; }
-            public DbSet<Termin_Hub> Termin_Hub { get; set; }
-            public DbSet<Zaliha> Zaliha { get; set; }
-            public DbSet<Hub> Hub { get; set; }
+        }
+        public DbSet<Korisnik> Korisnik { get; set; }
+        public DbSet<Zahtjev> Zahtjev { get; set; }
+        public DbSet<Termin> Termin { get; set; }
+        public DbSet<Zahtjev_Hub> Zahtjev_Hub { get; set; }
+        public DbSet<Termin_Hub> Termin_Hub { get; set; }
+        public DbSet<Zaliha> Zaliha { get; set; }
+        public DbSet<HUB> Hub { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -24,9 +29,12 @@ namespace VitalFlow.Data
             modelBuilder.Entity<Zahtjev_Hub>().ToTable("Zahtjev_Hub");
             modelBuilder.Entity<Termin_Hub>().ToTable("Termin_Hub");
             modelBuilder.Entity<Zaliha>().ToTable("Zaliha");
-            modelBuilder.Entity<Hub>().ToTable("Hub");
+            modelBuilder.Entity<HUB>().ToTable("Hub");
             base.OnModelCreating(modelBuilder);
         }
-    }
+
     }
 }
+
+
+
