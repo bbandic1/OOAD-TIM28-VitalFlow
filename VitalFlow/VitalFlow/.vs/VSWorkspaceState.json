@@ -4,8 +4,11 @@
     "\\Controllers",
     "\\Data",
     "\\Data\\Migrations",
-    "\\obj"
+    "\\obj",
+    "\\Properties",
+    "\\Views",
+    "\\wwwroot"
   ],
-  "SelectedNode": "\\Data\\ApplicationDbContext.cs",
+  "SelectedNode": "\\Views",
   "PreviewInSolutionExplorer": false
 }
