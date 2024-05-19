@@ -9,9 +9,14 @@ namespace VitalFlow.Data
             : base(options)
         {
             public DbSet<Korisnik> Korisnik { get; set; }
-            public DbSet<UpisNaPredmet> UpisNaPredmet { get; set; }
-            public DbSet<Predmet> Predmet { get; set; }
-            protected override void OnModelCreating(ModelBuilder modelBuilder)
+            public DbSet<Zahtjev> Zahtjev { get; set; }
+            public DbSet<Termin> Termin { get; set; }
+            public DbSet<Zahtjev_Hub> Zahtjev_Hub { get; set; }
+            public DbSet<Termin_Hub> Termin_Hub { get; set; }
+            public DbSet<Zaliha> Zaliha { get; set; }
+            public DbSet<Hub> Hub { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Student>().ToTable("Student");
             modelBuilder.Entity<UpisNaPredmet>().ToTable("UpisNaPredmet");
