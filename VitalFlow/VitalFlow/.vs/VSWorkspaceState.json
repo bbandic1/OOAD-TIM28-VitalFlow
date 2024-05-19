@@ -9,6 +9,6 @@
     "\\Views",
     "\\wwwroot"
   ],
-  "SelectedNode": "\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+  "SelectedNode": "\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }
