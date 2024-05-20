@@ -11,7 +11,7 @@
         public KrvnaGrupa krvnaGrupa {  get; set; }
         public int brojOtkazivanja { get; set; }
         public int ID {  get; set; }
-        public int Zahtjev {  get; set; }
+        public int ZahtjevID {  get; set; }
 
         public Korisnik() { }
     }
