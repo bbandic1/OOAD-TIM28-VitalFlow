@@ -1,7 +1,10 @@
-﻿namespace VitalFlow.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace VitalFlow.Models
 {
     public class Termin
     {
+        [Key]
         public int terminID { get; set; }
         public DateOnly datum {  get; set; }
         public Sale sala { get; set; }
