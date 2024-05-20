@@ -2,9 +2,9 @@
 {
     public class HUB
     {
-        public int TerminID { get; set; }
-        public int ZahtjevID { get; set; }
-        public int HubID { get; set; }
+        public int terminID { get; set; }
+        public int zahtjevID { get; set; }
+        public int hubID { get; set; }
         public HUB() { }
     }
 }

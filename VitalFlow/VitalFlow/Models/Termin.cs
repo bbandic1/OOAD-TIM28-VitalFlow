@@ -2,7 +2,7 @@
 {
     public class Termin
     {
-        public int TerminID { get; set; }
+        public int terminID { get; set; }
         public DateOnly datum {  get; set; }
         public Sale sala { get; set; }
         public string jmbg { get; set; }
