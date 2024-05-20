@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Reflection.Emit;
+using VitalFlow.Models;
 
 namespace VitalFlow.Data
 {
