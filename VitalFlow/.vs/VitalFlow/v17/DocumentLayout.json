@@ -102,23 +102,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "VitalFlow\\ScaffoldingReadMe.txt",
-              "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "VitalFlow\\ScaffoldingReadMe.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-05-27T20:58:12.777Z"
             },
             {
               "$type": "Document",
@@ -152,10 +140,22 @@
               "RelativeDocumentMoniker": "VitalFlow\\Program.cs",
               "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Program.cs",
               "RelativeToolTip": "VitalFlow\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T09:33:04.451Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "VitalFlow\\ScaffoldingReadMe.txt",
+              "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "VitalFlow\\ScaffoldingReadMe.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-27T20:58:12.777Z"
             },
             {
               "$type": "Document",
