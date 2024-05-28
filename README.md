@@ -1,1 +1,1 @@
-# OOAD-TIM28
+VitalFlow je aplikacija osmišljena kako bi olakšala proces doniranja i distribucije krvi putem intuitivnog korisničkog interface-a. Glavna svrha sistema je pribavljanje i distribucija krvi između donora i klinika. Sistem funkcionira kao posrednik koji prikuplja krvne donacije i prenosi ih klinikama koje su u potrebi, čime se pojednostavljuje proces i smanjuje administrativni teret. Integrirajući različite funkcionalnosti, VitalFlow doprinosi poboljšanju dostupnosti i efikasnosti procesa doniranja krvi u zajednici.
