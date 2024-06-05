@@ -1,6 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-#nullable disable
+﻿#nullable disable
 
 using System;
 using System.Collections.Generic;
@@ -18,6 +16,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using VitalFlow.Data;
+using VitalFlow.Models;
 
 namespace VitalFlow.Areas.Identity.Pages.Account
 {
@@ -45,60 +45,52 @@ namespace VitalFlow.Areas.Identity.Pages.Account
             _emailSender = emailSender;
         }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         [BindProperty]
         public InputModel Input { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public string ReturnUrl { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public class InputModel
         {
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
+            [Required]
+            [Display(Name = "Ime i Prezime")]
+            public string ImeIPrezime { get; set; }
+
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 5)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
 
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
-        }
 
+            [Required]
+            [Display(Name = "Broj Telefona")]
+            public string BrojTelefona { get; set; }
+
+            [Required]
+            [Display(Name = "Datum Rođenja")]
+            [DataType(DataType.Date)]
+            public DateOnly DatumRođenja { get; set; }
+
+            [Required]
+            [Display(Name = "JMBG")]
+            public string Jmbg { get; set; }
+
+            [Required]
+            [Display(Name = "Krvna Grupa")]
+            public KrvnaGrupa KrvnaGrupa { get; set; }
+        }
 
         public async Task OnGetAsync(string returnUrl = null)
         {
@@ -121,6 +113,24 @@ namespace VitalFlow.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
+
+                    var korisnik = new Korisnik
+                    {
+                        imeIPrezime = Input.ImeIPrezime,
+                        email = Input.Email,
+                        password = Input.Password,
+                        brojTelefona = Input.BrojTelefona,
+                        datumRođenja = Input.DatumRođenja,
+                        jmbg = Input.Jmbg,
+                        krvnaGrupa = Input.KrvnaGrupa,
+                        brojOtkazivanja = 0
+                    };
+
+                    // Save korisnik to the database
+                    // Assuming a DbContext is available via dependency injection
+                    var _context = HttpContext.RequestServices.GetService(typeof(ApplicationDbContext)) as ApplicationDbContext;
+                    _context.Korisnik.Add(korisnik);
+                    await _context.SaveChangesAsync();
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -150,7 +160,6 @@ namespace VitalFlow.Areas.Identity.Pages.Account
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return Page();
         }
 
@@ -178,3 +187,4 @@ namespace VitalFlow.Areas.Identity.Pages.Account
         }
     }
 }
+

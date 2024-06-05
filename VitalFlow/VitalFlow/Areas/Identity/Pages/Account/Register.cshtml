@@ -1,65 +1,83 @@
 ﻿@page
-@model RegisterModel
+@model VitalFlow.Areas.Identity.Pages.Account.RegisterModel
 @{
     ViewData["Title"] = "Register";
 }
 
 <h1>@ViewData["Title"]</h1>
 
+<h4>Create a new account.</h4>
+<hr />
 <div class="row">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Create a new account.</h2>
-            <hr />
-            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                <label asp-for="Input.Email">Email</label>
+    <div class="col-md-6">
+        <form method="post">
+            <h2>@Model.ReturnUrl</h2>
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Input.ImeIPrezime" class="control-label"></label>
+                <input asp-for="Input.ImeIPrezime" class="form-control" />
+                <span asp-validation-for="Input.ImeIPrezime" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Email" class="control-label"></label>
+                <input asp-for="Input.Email" class="form-control" />
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.Password">Password</label>
+
+            <div class="form-group">
+                <label asp-for="Input.Password" class="control-label"></label>
+                <input asp-for="Input.Password" class="form-control" />
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword" class="control-label"></label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+
+            <div class="form-group">
+                <label asp-for="Input.BrojTelefona" class="control-label"></label>
+                <input asp-for="Input.BrojTelefona" class="form-control" />
+                <span asp-validation-for="Input.BrojTelefona" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.DatumRođenja" class="control-label"></label>
+                <input asp-for="Input.DatumRođenja" class="form-control" type="date" />
+                <span asp-validation-for="Input.DatumRođenja" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Jmbg" class="control-label"></label>
+                <input asp-for="Input.Jmbg" class="form-control" />
+                <span asp-validation-for="Input.Jmbg" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.KrvnaGrupa" class="control-label"></label>
+                <select asp-for="Input.KrvnaGrupa" class="form-control">
+                    <option value="A_Pozitivna">A+</option>
+                    <option value="A_Negativna">A-</option>
+                    <option value="B_Pozitivna">B+</option>
+                    <option value="B_Negativna">B-</option>
+                    <option value="AB_Pozitivna">AB+</option>
+                    <option value="AB_Negativna">AB-</option>
+                    <option value="0_Pozitivna">O+</option>
+                    <option value="0_Negativna">O-</option>
+                </select>
+                <span asp-validation-for="Input.KrvnaGrupa" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Register</button>
         </form>
     </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to register.</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
-    </div>
+</div>
+
+<div>
+    <a asp-page="./Login">Already have an account? Log in.</a>
 </div>
 
 @section Scripts {
