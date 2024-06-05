@@ -1,29 +1,23 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace VitalFlow.Data.Migrations
 {
-    /// <inheritdoc />
     public partial class PrvaMigracija : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "Hub",
-                columns: table => new
-                {
-                    hubID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    terminID = table.Column<int>(type: "int", nullable: false),
-                    zahtjevID = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Hub", x => x.hubID);
-                });
+            // Proverite da li tabela već postoji
+            migrationBuilder.Sql(@"
+                IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Hub' and xtype='U')
+                BEGIN
+                    CREATE TABLE [Hub] (
+                        [hubID] int NOT NULL IDENTITY,
+                        [terminID] int NOT NULL,
+                        [zahtjevID] int NOT NULL,
+                        CONSTRAINT [PK_Hub] PRIMARY KEY ([hubID])
+                    );
+                END
+            ");
 
             migrationBuilder.CreateTable(
                 name: "Korisnik",
@@ -122,12 +116,8 @@ namespace VitalFlow.Data.Migrations
                 });
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Hub");
-
             migrationBuilder.DropTable(
                 name: "Korisnik");
 
@@ -145,6 +135,14 @@ namespace VitalFlow.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Zaliha");
+
+            // Proverite postojanje pre brisanja tabele
+            migrationBuilder.Sql(@"
+                IF EXISTS (SELECT * FROM sysobjects WHERE name='Hub' and xtype='U')
+                BEGIN
+                    DROP TABLE [Hub];
+                END
+            ");
         }
     }
 }
