@@ -25,6 +25,7 @@ namespace VitalFlow.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager; // Add RoleManager to manage roles
         private readonly IUserStore<IdentityUser> _userStore;
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
@@ -35,7 +36,8 @@ namespace VitalFlow.Areas.Identity.Pages.Account
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            RoleManager<IdentityRole> roleManager) // Inject RoleManager
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -43,6 +45,7 @@ namespace VitalFlow.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager; // Initialize RoleManager
         }
 
         [BindProperty]
@@ -102,6 +105,7 @@ namespace VitalFlow.Areas.Identity.Pages.Account
         {
             returnUrl ??= Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
@@ -127,10 +131,17 @@ namespace VitalFlow.Areas.Identity.Pages.Account
                     };
 
                     // Save korisnik to the database
-                    // Assuming a DbContext is available via dependency injection
                     var _context = HttpContext.RequestServices.GetService(typeof(ApplicationDbContext)) as ApplicationDbContext;
                     _context.Korisnik.Add(korisnik);
                     await _context.SaveChangesAsync();
+
+                    // Assign the user to the "Donor" role
+                    string roleName = "Donor";
+                    if (!await _roleManager.RoleExistsAsync(roleName))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(roleName));
+                    }
+                    await _userManager.AddToRoleAsync(user, roleName);
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -187,4 +198,3 @@ namespace VitalFlow.Areas.Identity.Pages.Account
         }
     }
 }
-
