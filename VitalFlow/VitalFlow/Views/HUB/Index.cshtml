@@ -1,41 +1,59 @@
 ﻿@model IEnumerable<VitalFlow.Models.HUB>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Hub";
 }
 
-<h1>Index</h1>
+<h1>Hub</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h2>Prijavljeni termini:</h2>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.terminID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.zahtjevID)
-            </th>
-            <th></th>
+            <th>@Html.DisplayNameFor(model => model.terminID)</th>
+            <th>@Html.DisplayNameFor(model => model.zahtjevID)</th>
+            <th>Akcije</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.terminID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.zahtjevID)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.hubID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.hubID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.hubID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.terminID)</td>
+                <td>@Html.DisplayFor(modelItem => item.zahtjevID)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.hubID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.hubID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.hubID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+<h2>Prijavi termin:</h2>
+<form asp-action="CreateTermin">
+    <div class="form-group">
+        <label for="KrvnaGrupa">Krvna Grupa</label>
+        <select class="form-control" id="KrvnaGrupa" name="KrvnaGrupa" required>
+            @foreach (var krvnaGrupa in Enum.GetValues(typeof(VitalFlow.Models.KrvnaGrupa)))
+            {
+                <option value="@krvnaGrupa">@krvnaGrupa</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Sala">Sala</label>
+        <select class="form-control" id="Sala" name="Sala" required>
+            @foreach (var sala in Enum.GetValues(typeof(VitalFlow.Models.Sale)))
+            {
+                <option value="@sala">@sala</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Datum">Datum</label>
+        <input type="date" class="form-control" id="Datum" name="Datum" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Prijavi Termin</button>
+</form>

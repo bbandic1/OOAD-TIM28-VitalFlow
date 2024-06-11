@@ -50,8 +50,6 @@ namespace VitalFlow.Controllers
         }
 
         // POST: HUB/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("terminID,zahtjevID,hubID")] HUB hUB)
@@ -82,8 +80,6 @@ namespace VitalFlow.Controllers
         }
 
         // POST: HUB/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("terminID,zahtjevID,hubID")] HUB hUB)
@@ -152,6 +148,36 @@ namespace VitalFlow.Controllers
         private bool HUBExists(int id)
         {
             return _context.Hub.Any(e => e.hubID == id);
+        }
+
+        // POST: HUB/CreateTermin
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateTermin(string ImePrezime, string JMBG, KrvnaGrupa KrvnaGrupa, Sale Sala, DateTime Datum, int Kapacitet)
+        {
+            if (ModelState.IsValid)
+            {
+                var termin = new Termin
+                {
+                    datum = Datum,
+                    sala = Sala,
+                    jmbg = JMBG,
+                    kapacitet = Kapacitet
+                };
+                _context.Add(termin);
+                await _context.SaveChangesAsync();
+
+                var hub = new HUB
+                {
+                    terminID = termin.terminID,
+                    zahtjevID = 0 // ili dodajte logiku za povezivanje sa zahtjevom
+                };
+                _context.Add(hub);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+            return View("Index", await _context.Hub.ToListAsync());
         }
     }
 }
