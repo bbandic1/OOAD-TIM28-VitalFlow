@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\VitalFlow.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\wwwroot\\css\\VitalFlow.styles.css",
+      "PackagePath": "staticwebassets\\css\\VitalFlow.styles.css"
+    },
+    {
       "Id": "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

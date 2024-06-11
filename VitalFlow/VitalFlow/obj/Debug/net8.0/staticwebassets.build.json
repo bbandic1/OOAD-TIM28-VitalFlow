@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D8JexGystBc99Oku2I5N9dIuZB08Dq41NxbljoqJ4e8=",
+  "Hash": "V3FUumLC2utDHBFxnHJWVduG7/JW5ZBAFNWmAd0fKRQ=",
   "Source": "VitalFlow",
   "BasePath": "_content/VitalFlow",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\wwwroot\\css\\VitalFlow.styles.css",
+      "SourceId": "VitalFlow",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\wwwroot\\",
+      "BasePath": "_content/VitalFlow",
+      "RelativePath": "css/VitalFlow.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\VitalFlow.styles.css"
     },
     {
       "Identity": "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\wwwroot\\favicon.ico",
