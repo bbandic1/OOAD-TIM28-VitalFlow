@@ -4,56 +4,143 @@
     ViewData["Title"] = "Hub";
 }
 
-<h1>Hub</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - VitalFlow</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/VitalFlow.styles.css" asp-append-version="true" />
 
-<h2>Prijavljeni termini:</h2>
-<table class="table">
-    <thead>
-        <tr>
-            <th>@Html.DisplayNameFor(model => model.terminID)</th>
-            <th>@Html.DisplayNameFor(model => model.zahtjevID)</th>
-            <th>Akcije</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@Html.DisplayFor(modelItem => item.terminID)</td>
-                <td>@Html.DisplayFor(modelItem => item.zahtjevID)</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.hubID">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.hubID">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.hubID">Delete</a>
-                </td>
-            </tr>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
         }
-    </tbody>
-</table>
 
-<h2>Prijavi termin:</h2>
-<form asp-action="CreateTermin">
-    <div class="form-group">
-        <label for="KrvnaGrupa">Krvna Grupa</label>
-        <select class="form-control" id="KrvnaGrupa" name="KrvnaGrupa" required>
-            @foreach (var krvnaGrupa in Enum.GetValues(typeof(VitalFlow.Models.KrvnaGrupa)))
-            {
-                <option value="@krvnaGrupa">@krvnaGrupa</option>
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        .table {
+            width: calc(100% - 60px);
+            margin: 0 auto 30px auto;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+            .table th, .table td {
+                padding: 15px;
+                border: 1px solid #fff;
             }
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="Sala">Sala</label>
-        <select class="form-control" id="Sala" name="Sala" required>
-            @foreach (var sala in Enum.GetValues(typeof(VitalFlow.Models.Sale)))
-            {
-                <option value="@sala">@sala</option>
+
+        .form-container {
+            width: calc(100% - 60px);
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+        }
+
+        .form-group label {
+            color: #fff;
+        }
+
+        .form-group select, .form-group input {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+            .btn-primary:hover, .btn-secondary:hover {
+                background-color: #0056b3;
             }
-        </select>
+    </style>
+</head>
+<body>
+    <h1>Hub</h1>
+
+    <h2>Prijavljeni termini:</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.terminID)</th>
+                <th>@Html.DisplayNameFor(model => model.zahtjevID)</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.terminID)</td>
+                    <td>@Html.DisplayFor(modelItem => item.zahtjevID)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.hubID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.hubID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.hubID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h2>Prijavi termin:</h2>
+    <div class="form-container">
+        <form asp-action="CreateTermin">
+            <div class="form-group">
+                <label for="KrvnaGrupa">Krvna Grupa</label>
+                <select class="form-control" id="KrvnaGrupa" name="KrvnaGrupa" required>
+                    @foreach (var krvnaGrupa in Enum.GetValues(typeof(VitalFlow.Models.KrvnaGrupa)))
+                    {
+                        <option value="@krvnaGrupa">@krvnaGrupa</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Sala">Sala</label>
+                <select class="form-control" id="Sala" name="Sala" required>
+                    @foreach (var sala in Enum.GetValues(typeof(VitalFlow.Models.Sale)))
+                    {
+                        <option value="@sala">@sala</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Datum">Datum</label>
+                <input type="date" class="form-control" id="Datum" name="Datum" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Prijavi Termin</button>
+        </form>
     </div>
-    <div class="form-group">
-        <label for="Datum">Datum</label>
-        <input type="date" class="form-control" id="Datum" name="Datum" required>
+    <div class="form-container" style="text-align: center; margin-top: 30px;">
+        <a asp-controller="Zaliha" asp-action="Index" class="btn btn-secondary">Stanje Zaliha</a>
     </div>
-    <button type="submit" class="btn btn-primary">Prijavi Termin</button>
-</form>
+</body>
+</html>

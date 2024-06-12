@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt - VitalFlow</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/VitalFlow.styles.css" asp-append-version="true" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .contact-container {
+            width: calc(100% - 60px);
+            margin: 0 30px;
+            height: 70vh;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            padding-top: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+            padding-right: 30px;
+        }
+
+            .contact-info h2, .contact-info p {
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+        .contact-form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+            .contact-form h2 {
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            .contact-form input, .contact-form textarea {
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            .contact-form textarea {
+                height: 100px;
+            }
+
+            .contact-form button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                cursor: pointer;
+            }
+
+                .contact-form button:hover {
+                    background-color: #0056b3;
+                }
+    </style>
+</head>
+<body>
+    <h1>Kontakt</h1>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Onsovne informacije</h2>
+            <p>Naziv firme: VitalFlow</p>
+            <p>Email: info@vitalflow.com</p>
+            <p>Telefon: +123 456 789</p>
+            <p>Adresa: Ulica 123, Grad, Država</p>
+        </div>
+        <div class="contact-form">
+            <h2>Pošalji E-Mail</h2>
+            <input type="text" placeholder="Ime i prezime" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Poruka" required></textarea>
+            <button type="submit">Pošalji poruku</button>
+        </div>
+    </div>
+</body>
+</html>
