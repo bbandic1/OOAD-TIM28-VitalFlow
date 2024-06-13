@@ -46,7 +46,14 @@ namespace VitalFlow.Controllers
         // GET: Zahtjev/Create
         public IActionResult Create()
         {
-            ViewBag.KrvnaGrupa = new SelectList(Enum.GetValues(typeof(KrvnaGrupa)).Cast<KrvnaGrupa>());
+            ViewBag.KrvnaGrupa = new SelectList(Enum.GetValues(typeof(KrvnaGrupa))
+                                         .Cast<KrvnaGrupa>()
+                                         .Select(e => new SelectListItem
+                                         {
+                                             Value = e.ToString(),
+                                             Text = EnumExtensions.GetDisplayName(e) // Koristimo GetDisplayName metodu da bismo dobili tekstualnu vrednost
+                                         }), "Value", "Text");
+
             return View();
         }
 

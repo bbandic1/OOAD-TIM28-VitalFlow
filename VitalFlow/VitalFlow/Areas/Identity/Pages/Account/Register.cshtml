@@ -17,53 +17,71 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center; /* Centriranje sadržaja vertikalno */
         padding: 30px;
         padding-top: 50px;
         color: white;
-        box-sizing: border-box; /* Dodano */
+        box-sizing: border-box;
     }
 
-    .transparent-form * {
-        box-sizing: border-box; /* Dodano */
-    }
+        .transparent-form * {
+            box-sizing: border-box;
+        }
 
-    .transparent-form form {
-        width: 100%;
-    }
+        .transparent-form form {
+            width: 100%;
+        }
 
-    .transparent-form .form-group {
-        margin-bottom: 20px;
-    }
+        .transparent-form .form-group {
+            margin-bottom: 20px;
+        }
 
-    .transparent-form .form-control {
-        width: 100%; /* Dodano */
-    }
+        .transparent-form .form-control {
+            width: 100%;
+        }
 
-    .transparent-form input[type="date"] {
-        width: 100%;
-    }
+        .transparent-form input[type="date"] {
+            width: 100%;
+        }
 
-    .transparent-form button {
-        align-self: center;
-        width: 40%;
-        margin-top: 20px; /* Dodaj razmak iznad buttona */
-    }
+        .transparent-form button {
+            width: 100%; /* Puno širine */
+            margin-top: 20px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
 
-    /* Stilizacija labela */
-    .transparent-form label {
-        margin-bottom: 8px;
-    }
+            .transparent-form button:hover {
+                background-color: #c82333;
+            }
 
-    .text-color{
-        color:black;
+        /* Stilizacija labela */
+        .transparent-form label {
+            margin-bottom: 8px;
+        }
+
+    .text-color {
+        color: black;
         text-align: center;
     }
+
+    .login-link {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .login-link a {
+            color: white;
+            text-decoration: none;
+        }
 </style>
 
 
-<h1 class="text-color">@ViewData["Title"]</h1>
-
-<h4 class="text-color">Create a new account.</h4>
+<h1 class="text-color">Sign Up</h1>
 <hr />
 <div class="row">
     <div class="col-md-6 transparent-form">
@@ -129,8 +147,8 @@
     </div>
 </div>
 
-<div>
-    <a asp-page="./Login">Already have an account? Log in.</a>
+<div class="login-link">
+    <a asp-page="./Login">Imaš registrovan profil? Log in.</a>
 </div>
 
 @section Scripts {

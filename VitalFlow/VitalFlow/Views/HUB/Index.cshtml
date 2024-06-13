@@ -31,7 +31,14 @@
         }
 
         h2 {
-            color: black; /* Crna boja za h2 */
+            color: white; /* Zadani stil za h2 */
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .heading-secondary {
+            color: black; /* Crna boja za h2 sa klasom heading-secondary */
+            text-align: left; /* Levo poravnanje */
             margin-top: 30px;
         }
 
@@ -44,11 +51,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             color: #fff;
         }
-
-            .table th, .table td {
-                padding: 15px;
-                border: 1px solid #fff;
-            }
 
         .form-container {
             margin-top: 50px;
@@ -64,6 +66,10 @@
 
         .form-group label {
             color: #fff;
+            text-align: left; /* Poravnanje teksta na lijevu stranu */
+            display: block; /* Da bi labela zauzela širinu kontejnera */
+            font-size: 18px; /* Veća veličina fonta za labelu */
+            margin-bottom: 10px; /* Malo veći razmak ispod labela */
         }
 
         .form-group select, .form-group input {
@@ -74,25 +80,31 @@
             border-radius: 5px;
             background-color: rgba(255, 255, 255, 0.1);
             color: white; /* Bijela boja teksta unutar select polja */
+            font-size: 16px; /* Veličina fonta za input/select polja */
         }
 
         .btn-primary, .btn-secondary {
-            padding: 10px 20px;
+            padding: 12px 24px; /* Povećavanje paddinga za dugmiće */
             border: none;
             border-radius: 5px;
-            background-color: #007bff;
+            background-color: #ff0000; /* Crvena boja za dugmiće */
             color: #fff;
             cursor: pointer;
-            margin-top: 15px;
-            width: 33%;
+            margin-top: 20px; /* Povećan razmak između dugmeta i prethodnog elementa */
+            max-width: 300px; /* Maksimalna širina dugmeta */
+            width: 100%; /* Ograničava širinu dugmića na 100% kontejnera */
+            text-align: center; /* Centrira tekst unutar dugmića */
+            display: block; /* Postavlja dugmiće kao blok elemente */
+            margin-left: auto; /* Centriranje na horizontali */
+            margin-right: auto; /* Centriranje na horizontali */
         }
 
             .btn-primary:hover, .btn-secondary:hover {
-                background-color: #0056b3;
+                background-color: #cc0000; /* Tamnija crvena boja na hover */
             }
 
         .form-group select {
-            color: white; /* Bijela boja teksta unutar select polja */
+            color: white;
         }
 
         .button-group {
@@ -100,14 +112,20 @@
             flex-direction: column;
             gap: 15px;
             margin-top: 30px;
+            align-items: center; /* Centriranje dugmića */
+        }
+
+        .vertical-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px; /* Razmak između kontejnera */
+            margin-top: 30px;
         }
 
     </style>
 </head>
 <body>
-    <h1>Hub</h1>
-
-    <h2>Prijavljeni termini:</h2>
+    <h2 class="heading-secondary">Prijavljeni termini:</h2>
     <table class="table">
         <thead>
             <tr>
@@ -132,38 +150,33 @@
         </tbody>
     </table>
 
-    <h2>Prijavi termin:</h2>
-    <div class="form-container">
-        <form asp-action="CreateTermin">
-            <div class="form-group">
-                <label for="KrvnaGrupa">Krvna Grupa</label>
-                <select class="form-control" id="KrvnaGrupa" name="KrvnaGrupa" required>
-                    @foreach (var krvnaGrupa in Enum.GetValues(typeof(VitalFlow.Models.KrvnaGrupa)))
-                    {
-                        <option value="@krvnaGrupa">@krvnaGrupa</option>
-                    }
-                </select>
+    <div class="vertical-container">
+        <div class="form-container">
+            <h2>Prijavi termin:</h2>
+            <form asp-action="CreateTermin">
+                <div class="form-group">
+                    <label for="Sala">Sala</label>
+                    <select class="form-control" id="Sala" name="Sala" required>
+                        @foreach (var sala in Enum.GetValues(typeof(VitalFlow.Models.Sale)))
+                        {
+                            <option value="@sala">@sala</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Datum">Datum</label>
+                    <input type="date" class="form-control" id="Datum" name="Datum" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Prijavi Termin</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <div class="button-group">
+                <a asp-controller="Zaliha" asp-action="Index" class="btn btn-secondary">Stanje Zaliha</a>
+                <a asp-controller="Zahtjev" asp-action="Index" class="btn btn-secondary">Zahtjevi Klinike</a>
             </div>
-            <div class="form-group">
-                <label for="Sala">Sala</label>
-                <select class="form-control" id="Sala" name="Sala" required>
-                    @foreach (var sala in Enum.GetValues(typeof(VitalFlow.Models.Sale)))
-                    {
-                        <option value="@sala">@sala</option>
-                    }
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="Datum">Datum</label>
-                <input type="date" class="form-control" id="Datum" name="Datum" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Prijavi Termin</button>
-        </form>
-        <div class="button-group">
-            <a asp-controller="Zaliha" asp-action="Index" class="btn btn-secondary">Stanje Zaliha</a>
-            <a asp-controller="Zahtjev" asp-action="Index" class="btn btn-secondary">Zahtjevi Klinike</a>
         </div>
     </div>
-    
 </body>
 </html>
