@@ -4,45 +4,70 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<style>
+    .custom-container {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        color: white;
+        padding: 20px;
+    }
 
-<h4>Zahtjev</h4>
+        .custom-container .form-group {
+            text-align: center;
+        }
+
+        .custom-container .form-control {
+            text-align: center;
+        }
+
+        .custom-container .btn-primary {
+            margin-top: 10px;
+        }
+
+        .custom-container .form-control.textarea {
+            height: 200px; /* Increased height for a longer text area */
+        }
+</style>
+
+<h1 class="text-center">Create</h1>
+
+<h4 class="text-center">Zahtjev</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="kolicina" class="control-label"></label>
-                <input asp-for="kolicina" class="form-control" />
-                <span asp-validation-for="kolicina" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="email" class="control-label"></label>
-                <input asp-for="email" class="form-control" />
-                <span asp-validation-for="email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="opis" class="control-label"></label>
-                <input asp-for="opis" class="form-control" />
-                <span asp-validation-for="opis" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="krvnaGrupa" class="control-label"></label>
-                <select asp-for="krvnaGrupa" class="form-control"></select>
-                <span asp-validation-for="krvnaGrupa" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="custom-container">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger text-center"></div>
+                <div class="form-group">
+                    <label asp-for="kolicina" class="control-label"></label>
+                    <input asp-for="kolicina" class="form-control" />
+                    <span asp-validation-for="kolicina" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="email" class="control-label"></label>
+                    <input asp-for="email" class="form-control" />
+                    <span asp-validation-for="email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="krvnaGrupa" class="control-label"></label>
+                    <select asp-for="krvnaGrupa" class="form-control" asp-items="ViewBag.KrvnaGrupa"></select>
+                    <span asp-validation-for="krvnaGrupa" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="opis" class="control-label"></label>
+                    <textarea asp-for="opis" class="form-control textarea"></textarea>
+                    <span asp-validation-for="opis" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

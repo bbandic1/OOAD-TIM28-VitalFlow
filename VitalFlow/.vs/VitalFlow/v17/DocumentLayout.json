@@ -3,6 +3,78 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\zahtjev\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\zahtjev\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\zahtjev\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\zahtjev\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\controllers\\zahtjevcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\controllers\\zahtjevcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\models\\zahtjev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\models\\zahtjev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\zahtjev\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\zahtjev\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\models\\krvnagrupa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\models\\krvnagrupa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\zahtjev\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\zahtjev\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\zahtjev\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\zahtjev\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\zaliha\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\zaliha\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\models\\zaliha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\models\\zaliha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\hub\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\hub\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,16 +83,8 @@
       "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\onama\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\zaliha\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\zaliha\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\kontakt\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\kontakt\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,18 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\models\\zalihaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,10 +155,6 @@
       "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\hub\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\models\\krvnagrupa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\models\\krvnagrupa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\models\\onamamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\models\\onamamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -117,6 +165,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|c:\\users\\user\\documents\\github\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\data\\migrations\\20240613204224_zahtjevfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\data\\migrations\\20240613204224_zahtjevfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,7 +186,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Create.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\Zahtjev\\Create.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Create.cshtml",
+              "RelativeToolTip": "VitalFlow\\Views\\Zahtjev\\Create.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowEEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T21:20:30.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAAAFMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T18:53:31.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KrvnaGrupa.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\KrvnaGrupa.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Models\\KrvnaGrupa.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\KrvnaGrupa.cs",
+              "RelativeToolTip": "VitalFlow\\Models\\KrvnaGrupa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:39:54.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "VitalFlow\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T21:28:03.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Kontakt\\Index.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Views\\Kontakt\\Index.cshtml",
@@ -142,12 +246,177 @@
               "RelativeToolTip": "VitalFlow\\Views\\Kontakt\\Index.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T18:47:28.446Z",
+              "WhenOpened": "2024-06-12T18:47:28.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Index.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\Zahtjev\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Index.cshtml",
+              "RelativeToolTip": "VitalFlow\\Views\\Zahtjev\\Index.cshtml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T20:34:51.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ZahtjevController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\ZahtjevController.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Controllers\\ZahtjevController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\ZahtjevController.cs",
+              "RelativeToolTip": "VitalFlow\\Controllers\\ZahtjevController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAgwDwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:31:51.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\Zahtjev\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Create.cshtml.cs",
+              "RelativeToolTip": "VitalFlow\\Views\\Zahtjev\\Create.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:20:44.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T19:14:53.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Zahtjev.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\Zahtjev.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Models\\Zahtjev.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\Zahtjev.cs",
+              "RelativeToolTip": "VitalFlow\\Models\\Zahtjev.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:38:50.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwBIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T18:53:34.571Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ManageNavPages.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "RelativeToolTip": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:23:08.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "VitalFlow\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADAAAACFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T21:28:12.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "VitalFlow\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAACAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T18:25:12.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Edit.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\Zahtjev\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Edit.cshtml",
+              "RelativeToolTip": "VitalFlow\\Views\\Zahtjev\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T21:15:25.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Delete.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\Zahtjev\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zahtjev\\Delete.cshtml",
+              "RelativeToolTip": "VitalFlow\\Views\\Zahtjev\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T21:02:08.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zaliha\\Index.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\Zaliha\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zaliha\\Index.cshtml",
+              "RelativeToolTip": "VitalFlow\\Views\\Zaliha\\Index.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAowEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T18:21:36.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Program.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Program.cs",
+              "RelativeToolTip": "VitalFlow\\Program.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAYwDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T11:23:07.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ZalihaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\ZalihaViewModel.cs",
               "RelativeDocumentMoniker": "VitalFlow\\Models\\ZalihaViewModel.cs",
@@ -159,33 +428,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Program.cs",
-              "RelativeDocumentMoniker": "VitalFlow\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Program.cs",
-              "RelativeToolTip": "VitalFlow\\Program.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAYwDcAAAAAAAAA",
+              "DocumentIndex": 41,
+              "Title": "20240613204224_ZahtjevFix.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Data\\Migrations\\20240613204224_ZahtjevFix.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Data\\Migrations\\20240613204224_ZahtjevFix.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Data\\Migrations\\20240613204224_ZahtjevFix.cs",
+              "RelativeToolTip": "VitalFlow\\Data\\Migrations\\20240613204224_ZahtjevFix.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T11:23:07.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T20:42:25.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAC4AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T19:14:53.901Z",
-              "EditorCaption": ""
+              "DocumentIndex": 16,
+              "Title": "Zaliha.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\Zaliha.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Models\\Zaliha.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\Zaliha.cs",
+              "RelativeToolTip": "VitalFlow\\Models\\Zaliha.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:43:45.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "VitalFlow\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAwCIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:38:07.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Onama\\Index.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Views\\Onama\\Index.cshtml",
@@ -193,12 +472,11 @@
               "RelativeToolTip": "VitalFlow\\Views\\Onama\\Index.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T18:39:28.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T18:39:28.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\HUB\\Index.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Views\\HUB\\Index.cshtml",
@@ -206,51 +484,11 @@
               "RelativeToolTip": "VitalFlow\\Views\\HUB\\Index.cshtml",
               "ViewState": "AQIAAE0AAAAAAAAAAAAowF0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T19:46:13.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T19:46:13.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zaliha\\Index.cshtml",
-              "RelativeDocumentMoniker": "VitalFlow\\Views\\Zaliha\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zaliha\\Index.cshtml",
-              "RelativeToolTip": "VitalFlow\\Views\\Zaliha\\Index.cshtml",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAIwEIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T18:21:36.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AQIAADgAAAAAAAAAAAAYwEQAAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T18:53:31.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAYwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T18:53:34.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -258,24 +496,11 @@
               "RelativeToolTip": "VitalFlow\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T19:14:52.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T19:14:52.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "VitalFlow\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "VitalFlow\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T18:25:12.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
@@ -287,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
@@ -299,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
@@ -311,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 25,
               "Title": "Korisnik.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\Korisnik.cs",
               "RelativeDocumentMoniker": "VitalFlow\\Models\\Korisnik.cs",
@@ -323,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
@@ -335,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 29,
               "Title": "KorisnikController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\KorisnikController.cs",
               "RelativeDocumentMoniker": "VitalFlow\\Controllers\\KorisnikController.cs",
@@ -347,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 30,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Views\\Shared\\_LoginPartial.cshtml",
@@ -359,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 31,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\Zaliha\\Details.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Views\\Zaliha\\Details.cshtml",
@@ -371,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 32,
               "Title": "HUBController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\HUBController.cs",
               "RelativeDocumentMoniker": "VitalFlow\\Controllers\\HUBController.cs",
@@ -383,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 33,
               "Title": "KontaktController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\KontaktController.cs",
               "RelativeDocumentMoniker": "VitalFlow\\Controllers\\KontaktController.cs",
@@ -395,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 34,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\HUB\\Edit.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Views\\HUB\\Edit.cshtml",
@@ -407,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 35,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\HUB\\Create.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Views\\HUB\\Create.cshtml",
@@ -419,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 36,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\HUB\\Delete.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Views\\HUB\\Delete.cshtml",
@@ -431,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 37,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\HUB\\Details.cshtml",
               "RelativeDocumentMoniker": "VitalFlow\\Views\\HUB\\Details.cshtml",
@@ -443,19 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "KrvnaGrupa.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\KrvnaGrupa.cs",
-              "RelativeDocumentMoniker": "VitalFlow\\Models\\KrvnaGrupa.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\KrvnaGrupa.cs",
-              "RelativeToolTip": "VitalFlow\\Models\\KrvnaGrupa.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T19:39:54.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 39,
               "Title": "Onama.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\Onama.cs",
               "RelativeDocumentMoniker": "VitalFlow\\Models\\Onama.cs",
@@ -467,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 38,
               "Title": "OnamaModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\OnamaModel.cs",
               "RelativeDocumentMoniker": "VitalFlow\\Models\\OnamaModel.cs",
@@ -479,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 40,
               "Title": "HUB.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Models\\HUB.cs",
               "RelativeDocumentMoniker": "VitalFlow\\Models\\HUB.cs",

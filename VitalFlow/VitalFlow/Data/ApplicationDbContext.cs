@@ -30,7 +30,9 @@ namespace VitalFlow.Data
                 v => Enum.Parse<KrvnaGrupa>(v.Replace("+", "_Pozitivna").Replace("-", "_Negativna"))
             );
             modelBuilder.Entity<Korisnik>().ToTable("Korisnik");
-            modelBuilder.Entity<Zahtjev>().ToTable("Zahtjev");
+            modelBuilder.Entity<Zahtjev>().ToTable("Zahtjev")
+                .Property(z => z.krvnaGrupa)
+                .HasConversion(krvnaGrupaConverter);
             modelBuilder.Entity<Termin>().ToTable("Termin");
             modelBuilder.Entity<ZahtjevHub>().ToTable("ZahtjevHub");
             modelBuilder.Entity<TerminHub>().ToTable("TerminHub");

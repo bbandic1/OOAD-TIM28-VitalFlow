@@ -46,12 +46,11 @@ namespace VitalFlow.Controllers
         // GET: Zahtjev/Create
         public IActionResult Create()
         {
+            ViewBag.KrvnaGrupa = new SelectList(Enum.GetValues(typeof(KrvnaGrupa)).Cast<KrvnaGrupa>());
             return View();
         }
 
         // POST: Zahtjev/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("zahtjevID,kolicina,email,opis,krvnaGrupa")] Zahtjev zahtjev)
@@ -60,8 +59,9 @@ namespace VitalFlow.Controllers
             {
                 _context.Add(zahtjev);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Create));
             }
+            ViewBag.KrvnaGrupa = new SelectList(Enum.GetValues(typeof(KrvnaGrupa)).Cast<KrvnaGrupa>());
             return View(zahtjev);
         }
 
@@ -78,12 +78,11 @@ namespace VitalFlow.Controllers
             {
                 return NotFound();
             }
+            ViewBag.KrvnaGrupa = new SelectList(Enum.GetValues(typeof(KrvnaGrupa)).Cast<KrvnaGrupa>());
             return View(zahtjev);
         }
 
         // POST: Zahtjev/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("zahtjevID,kolicina,email,opis,krvnaGrupa")] Zahtjev zahtjev)
@@ -113,6 +112,7 @@ namespace VitalFlow.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.KrvnaGrupa = new SelectList(Enum.GetValues(typeof(KrvnaGrupa)).Cast<KrvnaGrupa>());
             return View(zahtjev);
         }
 

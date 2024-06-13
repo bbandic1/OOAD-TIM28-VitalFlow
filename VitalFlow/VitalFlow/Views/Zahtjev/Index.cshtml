@@ -3,12 +3,30 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    .custom-table-wrapper {
+        border: 2px solid black;
+        padding: 10px;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+        color: white; /* White text */
+    }
 
+        .custom-table-wrapper .table {
+            color: white; /* White text inside the table */
+        }
+
+        
+
+    h1 {
+        color: black;
+        text-align: center;
+    }
+</style>
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="custom-table-wrapper">
 <table class="table">
     <thead>
         <tr>
@@ -37,11 +55,12 @@
                 @Html.DisplayFor(modelItem => item.email)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.krvnaGrupa)
+                </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.opis)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.krvnaGrupa)
-            </td>
+            cre
             <td>
                 <a asp-action="Edit" asp-route-id="@item.zahtjevID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.zahtjevID">Details</a> |
@@ -51,3 +70,4 @@
 }
     </tbody>
 </table>
+</div>
