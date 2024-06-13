@@ -4,12 +4,69 @@
     ViewData["Title"] = "Register";
 }
 
-<h1>@ViewData["Title"]</h1>
+<style>
+    .transparent-form {
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        padding-top: 50px;
+        color: white;
+        box-sizing: border-box; /* Dodano */
+    }
 
-<h4>Create a new account.</h4>
+    .transparent-form * {
+        box-sizing: border-box; /* Dodano */
+    }
+
+    .transparent-form form {
+        width: 100%;
+    }
+
+    .transparent-form .form-group {
+        margin-bottom: 20px;
+    }
+
+    .transparent-form .form-control {
+        width: 100%; /* Dodano */
+    }
+
+    .transparent-form input[type="date"] {
+        width: 100%;
+    }
+
+    .transparent-form button {
+        align-self: center;
+        width: 40%;
+        margin-top: 20px; /* Dodaj razmak iznad buttona */
+    }
+
+    /* Stilizacija labela */
+    .transparent-form label {
+        margin-bottom: 8px;
+    }
+
+    .text-color{
+        color:black;
+        text-align: center;
+    }
+</style>
+
+
+<h1 class="text-color">@ViewData["Title"]</h1>
+
+<h4 class="text-color">Create a new account.</h4>
 <hr />
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 transparent-form">
         <form method="post">
             <h2>@Model.ReturnUrl</h2>
             <div asp-validation-summary="All" class="text-danger"></div>

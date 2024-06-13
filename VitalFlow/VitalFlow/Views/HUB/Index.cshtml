@@ -25,13 +25,13 @@
 
         h1 {
             font-size: 36px;
-            color: #fff;
+            color: black; /* Crna boja za h1 */
             text-align: center;
             margin: 20px 0;
         }
 
         h2 {
-            color: #fff;
+            color: black; /* Crna boja za h2 */
             margin-top: 30px;
         }
 
@@ -51,10 +51,11 @@
             }
 
         .form-container {
+            margin-top: 50px;
             width: calc(100% - 60px);
             margin: 0 auto;
-            background: rgba(0, 0, 0, 0.7); 
-            backdrop-filter: blur(10px); 
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             padding: 30px;
@@ -71,8 +72,8 @@
             padding: 10px;
             border: none;
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.1); 
-            color: #000; 
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white; /* Bijela boja teksta unutar select polja */
         }
 
         .btn-primary, .btn-secondary {
@@ -83,11 +84,24 @@
             color: #fff;
             cursor: pointer;
             margin-top: 15px;
+            width: 33%;
         }
 
             .btn-primary:hover, .btn-secondary:hover {
                 background-color: #0056b3;
             }
+
+        .form-group select {
+            color: white; /* Bijela boja teksta unutar select polja */
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
     </style>
 </head>
 <body>
@@ -145,9 +159,11 @@
             </div>
             <button type="submit" class="btn btn-primary">Prijavi Termin</button>
         </form>
+        <div class="button-group">
+            <a asp-controller="Zaliha" asp-action="Index" class="btn btn-secondary">Stanje Zaliha</a>
+            <a asp-controller="Zahtjev" asp-action="Index" class="btn btn-secondary">Zahtjevi Klinike</a>
+        </div>
     </div>
-    <div class="form-container" style="text-align: center; margin-top: 30px;">
-        <a asp-controller="Zaliha" asp-action="Index" class="btn btn-secondary">Stanje Zaliha</a>
-    </div>
+    
 </body>
 </html>

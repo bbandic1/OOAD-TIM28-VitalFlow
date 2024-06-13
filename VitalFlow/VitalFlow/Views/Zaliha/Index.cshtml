@@ -4,36 +4,63 @@
     ViewData["Title"] = "Zaliha";
 }
 
+<style>
+    .custom-table-wrapper {
+        border: 2px solid black;
+        padding: 10px;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+        color: white; /* White text */
+    }
+
+        .custom-table-wrapper .table {
+            color: white; /* White text inside the table */
+        }
+
+        .custom-table-wrapper .btn {
+            color: white; /* White text on buttons */
+            width: 100%; /* Make buttons full width of parent container */
+            margin-bottom: 5px; /* Add margin between buttons */
+        }
+
+    h2 {
+        color: black;
+        text-align: center;
+    }
+</style>
+
 <h2>Zaliha</h2>
 
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Krvna Grupa</th>
-            <th>Količina</th>
-            <th>Kritična Linija</th>
-            <th>Akcije</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<div class="custom-table-wrapper">
+    <table class="table">
+        <thead>
             <tr>
-                <td>@item.KrvnaGrupa.ToString().Replace('_', ' ')</td>
-                <td>@item.Kolicina</td>
-                <td>@item.KriticnaLinija</td>
-                <td>
-                    <form asp-controller="Zaliha" asp-action="Increase" method="post">
-                        <input type="hidden" name="krvnaGrupa" value="@item.KrvnaGrupa.ToString()" />
-                        <button type="submit" class="btn btn-success">Povećaj</button>
-                    </form>
-                    <form asp-controller="Zaliha" asp-action="Decrease" method="post">
-                        <input type="hidden" name="krvnaGrupa" value="@item.KrvnaGrupa.ToString()" />
-                        <button type="submit" class="btn btn-danger">Smanji</button>
-                    </form>
-                </td>
+                <th>Krvna Grupa</th>
+                <th>Količina</th>
+                <th>Kritična Linija</th>
+                <th>Akcije</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.KrvnaGrupa.ToString().Replace('_', ' ')</td>
+                    <td>@item.Kolicina</td>
+                    <td>@item.KriticnaLinija</td>
+                    <td>
+                        <form asp-controller="Zaliha" asp-action="Increase" method="post" style="margin-bottom: 5px;">
+                            <input type="hidden" name="krvnaGrupa" value="@item.KrvnaGrupa.ToString()" />
+                            <button type="submit" class="btn btn-success">Povećaj</button>
+                        </form>
+                        <form asp-controller="Zaliha" asp-action="Decrease" method="post">
+                            <input type="hidden" name="krvnaGrupa" value="@item.KrvnaGrupa.ToString()" />
+                            <button type="submit" class="btn btn-danger">Smanji</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
