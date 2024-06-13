@@ -23,7 +23,7 @@
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link text-white" asp-area="" asp-controller="Onama" asp-action="Index">O nama</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Onama" asp-action="Index">O nama</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Kontakt">Kontakt</a>
@@ -35,6 +35,11 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="~/Identity/Account/Manage">Profil</a>
+                            </li>
+                            <li class="nav-item">
+                                <form method="post" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                    <button type="submit" class="nav-link btn btn-link text-white">Logout</button>
+                                </form>
                             </li>
                         }
                         else
