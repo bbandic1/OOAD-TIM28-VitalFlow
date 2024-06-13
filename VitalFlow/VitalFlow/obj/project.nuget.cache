@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "suT1MH6bix9mJFiLh1pVFyt46uhGhB+8WDFsvPluf/uRCrh8wpT3KoAJZ32k/+SvBd59HCpoDHxqLExMyPs6rQ==",
+  "dgSpecHash": "yiZ+MCHE26pfu1w7lxtmmY9xiLelulNKjYVrskhdjy2FFN0eIBJnykBJN8Z94+aHjo4xEnzvyy8ZcXRtzkaBsA==",
   "success": true,
-  "projectFilePath": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\Backup\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj",
+  "projectFilePath": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korisnik\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\korisnik\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
