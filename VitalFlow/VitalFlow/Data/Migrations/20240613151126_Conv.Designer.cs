@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VitalFlow.Data;
 
@@ -11,9 +12,11 @@ using VitalFlow.Data;
 namespace VitalFlow.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240613151126_Conv")]
+    partial class Conv
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -384,10 +387,7 @@ namespace VitalFlow.Data.Migrations
             modelBuilder.Entity("VitalFlow.Models.Zaliha", b =>
                 {
                     b.Property<int>("hubID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("hubID"));
 
                     b.Property<int>("kolicina")
                         .HasColumnType("int");
@@ -395,7 +395,7 @@ namespace VitalFlow.Data.Migrations
                     b.Property<int>("kriticnaLiinija")
                         .HasColumnType("int");
 
-                    b.Property<string>("krvnaGrupa")
+                    b.Property<string>("krvnaGrupaString")
                         .IsRequired()
                         .HasColumnType("varchar(3)");
 
@@ -453,6 +453,17 @@ namespace VitalFlow.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("VitalFlow.Models.Zaliha", b =>
+                {
+                    b.HasOne("VitalFlow.Models.HUB", "HUB")
+                        .WithMany()
+                        .HasForeignKey("hubID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("HUB");
                 });
 #pragma warning restore 612, 618
         }

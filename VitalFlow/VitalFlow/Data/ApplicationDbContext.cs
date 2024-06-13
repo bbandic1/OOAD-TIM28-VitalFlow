@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System;
 using System.Reflection.Emit;
 using VitalFlow.Models;
@@ -24,12 +25,19 @@ namespace VitalFlow.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            var krvnaGrupaConverter = new ValueConverter<KrvnaGrupa, string>(
+                v => v.ToString().Replace("_Pozitivna", "+").Replace("_Negativna", "-"),
+                v => Enum.Parse<KrvnaGrupa>(v.Replace("+", "_Pozitivna").Replace("-", "_Negativna"))
+            );
             modelBuilder.Entity<Korisnik>().ToTable("Korisnik");
             modelBuilder.Entity<Zahtjev>().ToTable("Zahtjev");
             modelBuilder.Entity<Termin>().ToTable("Termin");
             modelBuilder.Entity<ZahtjevHub>().ToTable("ZahtjevHub");
             modelBuilder.Entity<TerminHub>().ToTable("TerminHub");
-            modelBuilder.Entity<Zaliha>().ToTable("Zaliha");
+            modelBuilder.Entity<Zaliha>()
+                .Property(z => z.krvnaGrupa)
+                .HasConversion(krvnaGrupaConverter);
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<HUB>().ToTable("Hub");
             base.OnModelCreating(modelBuilder);
         }

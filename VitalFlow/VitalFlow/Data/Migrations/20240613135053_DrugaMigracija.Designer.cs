@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VitalFlow.Data;
 
@@ -11,9 +12,11 @@ using VitalFlow.Data;
 namespace VitalFlow.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240613135053_DrugaMigracija")]
+    partial class DrugaMigracija
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -395,13 +398,12 @@ namespace VitalFlow.Data.Migrations
                     b.Property<int>("kriticnaLiinija")
                         .HasColumnType("int");
 
-                    b.Property<string>("krvnaGrupa")
-                        .IsRequired()
-                        .HasColumnType("varchar(3)");
+                    b.Property<int>("krvnaGrupa")
+                        .HasColumnType("int");
 
                     b.HasKey("hubID");
 
-                    b.ToTable("Zaliha");
+                    b.ToTable("Zaliha", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

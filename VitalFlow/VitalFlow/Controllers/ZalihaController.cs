@@ -1,157 +1,104 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using VitalFlow.Data;
 using VitalFlow.Models;
 
 namespace VitalFlow.Controllers
 {
-    public class ZalihaController : Controller
+    namespace VitalFlow.Controllers
     {
-        private readonly ApplicationDbContext _context;
-
-        public ZalihaController(ApplicationDbContext context)
+        public class ZalihaController : Controller
         {
-            _context = context;
-        }
+            private readonly ApplicationDbContext _context;
+            private readonly ILogger<ZalihaController> _logger;
 
-        // GET: Zaliha
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Zaliha.ToListAsync());
-        }
-
-        // GET: Zaliha/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
+            public ZalihaController(ApplicationDbContext context, ILogger<ZalihaController> logger)
             {
-                return NotFound();
+                _context = context;
+                _logger = logger;
             }
 
-            var zaliha = await _context.Zaliha
-                .FirstOrDefaultAsync(m => m.hubID == id);
-            if (zaliha == null)
+            // GET: Zaliha
+            public async Task<IActionResult> Index()
             {
-                return NotFound();
+                var zalihe = await _context.Zaliha
+                    .Select(z => new ZalihaViewModel
+                    {
+                        HubID = z.hubID,
+                        KrvnaGrupa = z.krvnaGrupa,
+                        Kolicina = z.kolicina,
+                        KriticnaLinija = z.kriticnaLiinija
+                    }).ToListAsync();
+
+                return View(zalihe);
             }
 
-            return View(zaliha);
-        }
 
-        // GET: Zaliha/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Zaliha/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("krvnaGrupa,kolicina,kriticnaLinija,hubID")] Zaliha zaliha)
-        {
-            if (ModelState.IsValid)
+            // POST: Zaliha/Increase
+            [HttpPost]
+            public async Task<IActionResult> Increase(string krvnaGrupa)
             {
-                _context.Add(zaliha);
+                _logger.LogInformation($"Decrease request received for blood type: {krvnaGrupa}");
+                // Provjera i pretvorba stringa u enum KrvnaGrupa
+                if (!Enum.TryParse<KrvnaGrupa>(krvnaGrupa, out var krvnaGrupaEnum))
+                {
+                    return BadRequest("Invalid blood type");
+                }
+
+                // Pronalaženje zalihe za odabranu krvnu grupu
+                var zaliha = await _context.Zaliha
+                    .FirstOrDefaultAsync(z => z.krvnaGrupa == krvnaGrupaEnum);
+
+                if (zaliha == null)
+                {
+                    return NotFound();
+                }
+
+                // Povećanje količine za pronađenu zalihu
+                zaliha.kolicina++;
+
+                // Spremanje promjena u bazi podataka
                 await _context.SaveChangesAsync();
+
+                // Preusmjeravanje na akciju Index nakon uspješnog ažuriranja
                 return RedirectToAction(nameof(Index));
             }
-            return View(zaliha);
-        }
 
-        // GET: Zaliha/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
+            // POST: Zaliha/Decrease
+            [HttpPost]
+            public async Task<IActionResult> Decrease(string krvnaGrupa)
             {
-                return NotFound();
-            }
-
-            var zaliha = await _context.Zaliha.FindAsync(id);
-            if (zaliha == null)
-            {
-                return NotFound();
-            }
-            return View(zaliha);
-        }
-
-        // POST: Zaliha/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("krvnaGrupa,kolicina,kriticnaLinija,hubID")] Zaliha zaliha)
-        {
-            if (id != zaliha.hubID)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
+                // Provjera i pretvorba stringa u enum KrvnaGrupa
+                if (!Enum.TryParse<KrvnaGrupa>(krvnaGrupa, out var krvnaGrupaEnum))
                 {
-                    _context.Update(zaliha);
-                    await _context.SaveChangesAsync();
+                    return BadRequest("Invalid blood type");
                 }
-                catch (DbUpdateConcurrencyException)
+
+                // Pronalaženje zalihe za odabranu krvnu grupu
+                var zaliha = await _context.Zaliha
+                    .FirstOrDefaultAsync(z => z.krvnaGrupa == krvnaGrupaEnum);
+
+                if (zaliha == null)
                 {
-                    if (!ZalihaExists(zaliha.hubID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return NotFound();
                 }
+
+                // Smanjenje količine za pronađenu zalihu
+                zaliha.kolicina--;
+
+                // Spremanje promjena u bazi podataka
+                await _context.SaveChangesAsync();
+
+                // Preusmjeravanje na akciju Index nakon uspješnog ažuriranja
                 return RedirectToAction(nameof(Index));
             }
-            return View(zaliha);
-        }
 
-        // GET: Zaliha/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
+            private bool ZalihaExists(KrvnaGrupa krvnaGrupa)
             {
-                return NotFound();
+                return _context.Zaliha.Any(e => e.krvnaGrupa == krvnaGrupa);
             }
-
-            var zaliha = await _context.Zaliha
-                .FirstOrDefaultAsync(m => m.hubID == id);
-            if (zaliha == null)
-            {
-                return NotFound();
-            }
-
-            return View(zaliha);
-        }
-
-        // POST: Zaliha/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var zaliha = await _context.Zaliha.FindAsync(id);
-            if (zaliha != null)
-            {
-                _context.Zaliha.Remove(zaliha);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool ZalihaExists(int id)
-        {
-            return _context.Zaliha.Any(e => e.hubID == id);
         }
     }
 }

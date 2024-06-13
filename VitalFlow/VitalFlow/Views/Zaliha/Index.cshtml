@@ -1,113 +1,38 @@
-﻿@model IEnumerable<VitalFlow.Models.Zaliha>
+﻿@model IEnumerable<VitalFlow.Models.ZalihaViewModel>
 
 @{
-    ViewData["Title"] = "Stanje Zaliha";
+    ViewData["Title"] = "Zaliha";
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - VitalFlow</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/VitalFlow.styles.css" asp-append-version="true" />
+<h2>Zaliha</h2>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            font-size: 36px;
-            color: #fff;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 0 20px;
-        }
-
-        .blood-group {
-            flex: 0 0 48%;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 15px;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-            .blood-group h2 {
-                font-size: 24px;
-                color: #fff;
-            }
-
-            .blood-group .actions, .blood-group .status {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-                .blood-group .actions button {
-                    background-color: transparent;
-                    border: none;
-                    color: #fff;
-                    font-size: 24px;
-                    cursor: pointer;
-                    margin: 5px 0;
-                }
-
-            .blood-group .status {
-                text-align: center;
-            }
-
-                .blood-group .status .bar {
-                    width: 100px;
-                    height: 20px;
-                    background: linear-gradient(to right, red, transparent);
-                    border-radius: 10px;
-                    margin-top: 10px;
-                }
-
-                .blood-group .status span {
-                    color: #fff;
-                }
-    </style>
-</head>
-<body>
-    <h1>Stanje Zalihe</h1>
-    <div class="container">
+<table class="table">
+    <thead>
+        <tr>
+            <th>Krvna Grupa</th>
+            <th>Količina</th>
+            <th>Kritična Linija</th>
+            <th>Akcije</th>
+        </tr>
+    </thead>
+    <tbody>
         @foreach (var item in Model)
         {
-            <div class="blood-group">
-                <div class="group-info">
-                    <h2>Grupa @Html.DisplayFor(modelItem => item.krvnaGrupa)</h2>
-                </div>
-                <div class="actions">
-                    <button type="button">+</button>
-                    <button type="button">-</button>
-                </div>
-                <div class="status">
-                    <span>Količina: @Html.DisplayFor(modelItem => item.kolicina)</span>
-                    <div class="bar" style="width:@item.kolicina%;"></div>
-                    <span>Kapacitet: @Html.DisplayFor(modelItem => item.kriticnaLiinija)%</span>
-                </div>
-            </div>
+            <tr>
+                <td>@item.KrvnaGrupa.ToString().Replace('_', ' ')</td>
+                <td>@item.Kolicina</td>
+                <td>@item.KriticnaLinija</td>
+                <td>
+                    <form asp-controller="Zaliha" asp-action="Increase" method="post">
+                        <input type="hidden" name="krvnaGrupa" value="@item.KrvnaGrupa.ToString()" />
+                        <button type="submit" class="btn btn-success">Povećaj</button>
+                    </form>
+                    <form asp-controller="Zaliha" asp-action="Decrease" method="post">
+                        <input type="hidden" name="krvnaGrupa" value="@item.KrvnaGrupa.ToString()" />
+                        <button type="submit" class="btn btn-danger">Smanji</button>
+                    </form>
+                </td>
+            </tr>
         }
-    </div>
-    <p style="text-align: center; margin-top: 20px;">
-        <a asp-action="Create" class="btn btn-primary">Create New</a>
-    </p>
-</body>
-</html>
+    </tbody>
+</table>
