@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using VitalFlow.Data;
 using VitalFlow.Models;
@@ -50,8 +49,6 @@ namespace VitalFlow.Controllers
         }
 
         // POST: Termin/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("terminID,datum,sala,jmbg,kapacitet")] Termin termin)
@@ -82,8 +79,6 @@ namespace VitalFlow.Controllers
         }
 
         // POST: Termin/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("terminID,datum,sala,jmbg,kapacitet")] Termin termin)
@@ -152,6 +147,12 @@ namespace VitalFlow.Controllers
         private bool TerminExists(int id)
         {
             return _context.Termin.Any(e => e.terminID == id);
+        }
+
+        // GET: Termin/PrikazPrijavljenihTermina
+        public async Task<IActionResult> PrijavljeniTermini()
+        {
+            return View(await _context.Termin.ToListAsync());
         }
     }
 }

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<VitalFlow.Models.Termin>
+
+@{
+    ViewData["Title"] = "Prijavljeni Termini";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - VitalFlow</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/VitalFlow.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <h2 class="heading-secondary">Prijavljeni termini:</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().sala)</th>
+                <th>@Html.DisplayNameFor(model => model.First().datum)</th>
+                <th>@Html.DisplayNameFor(model => model.First().vrijeme)</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.sala)</td>
+                    <td>@Html.DisplayFor(modelItem => item.datum)</td>
+                    <td>@Html.DisplayFor(modelItem => item.vrijeme)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

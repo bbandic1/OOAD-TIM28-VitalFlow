@@ -122,12 +122,14 @@ namespace VitalFlow.Areas.Identity.Pages.Account
                     {
                         imeIPrezime = Input.ImeIPrezime,
                         email = Input.Email,
-                        password = Input.Password,
+                        password = "",
                         brojTelefona = Input.BrojTelefona,
                         datumRođenja = Input.DatumRođenja,
                         jmbg = Input.Jmbg,
                         krvnaGrupa = Input.KrvnaGrupa,
-                        brojOtkazivanja = 0
+                        brojOtkazivanja = 0,
+                        identityID = user.Id
+                        
                     };
 
                     // Save korisnik to the database

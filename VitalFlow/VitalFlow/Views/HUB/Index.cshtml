@@ -38,18 +38,8 @@
 
         .heading-secondary {
             color: black; /* Crna boja za h2 sa klasom heading-secondary */
-            text-align: left; 
+            text-align: left;
             margin-top: 30px;
-        }
-
-        .table {
-            width: calc(100% - 60px);
-            margin: 0 auto 30px auto;
-            background: rgba(0, 0, 0, 0.7); /* Adjust transparency here */
-            backdrop-filter: blur(10px); /* Creates the glassy effect */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            color: #fff;
         }
 
         .form-container {
@@ -103,10 +93,6 @@
                 background-color: #c82333; /* Tamnija crvena boja na hover */
             }
 
-        .form-group select {
-            color: white;
-        }
-
         .button-group {
             display: flex;
             flex-direction: column;
@@ -122,33 +108,38 @@
             margin-top: 30px;
         }
 
+        .btn-view-termini {
+            background-color: #dc3545; /* Crvena boja za button */
+            color: #fff;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Crni border/container */
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            color: #fff;
+            text-align: center;
+        }
+
+            .container a.btn-view-termini {
+                color: #fff; /* Bijeli tekst za button unutar crnog container-a */
+            }
     </style>
 </head>
 <body>
-    <h2 class="heading-secondary">Prijavljeni termini:</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>@Html.DisplayNameFor(model => model.terminID)</th>
-                <th>@Html.DisplayNameFor(model => model.zahtjevID)</th>
-                <th>Akcije</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@Html.DisplayFor(modelItem => item.terminID)</td>
-                    <td>@Html.DisplayFor(modelItem => item.zahtjevID)</td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.hubID">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.hubID">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.hubID">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="container">
+        <a href="@Url.Action("PrikazPrijavljenihTermina", "Termin")" class="btn-view-termini">Prikaz prijavljenih termina</a>
+    </div>
 
     <div class="vertical-container">
         <div class="form-container">

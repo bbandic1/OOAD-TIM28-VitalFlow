@@ -189,14 +189,6 @@ namespace VitalFlow.Controllers
 
                 _logger.LogInformation($"Novi termin je uspješno kreiran (ID: {termin.terminID}).");
 
-                var hub = new HUB
-                {
-                    terminID = termin.terminID,
-                };
-
-                _context.Add(hub);
-                await _context.SaveChangesAsync();
-
 
                 _logger.LogInformation("Završena akcija CreateTermin.");
 

@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
+using VitalFlow.Data;
 using VitalFlow.Models;
 
 namespace YourAppName.Areas.Identity.Pages.Account
@@ -10,11 +12,19 @@ namespace YourAppName.Areas.Identity.Pages.Account
     public class ManageModel : PageModel
     {
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly ApplicationDbContext _context;
 
-        public ManageModel(UserManager<IdentityUser> userManager)
+        public ManageModel(UserManager<IdentityUser> userManager, ApplicationDbContext context)
         {
             _userManager = userManager;
+            _context = context;
         }
+
+        [BindProperty]
+        public string Email { get; set; }
+
+        [BindProperty]
+        public string PhoneNumber { get; set; }
 
         [BindProperty]
         public string JMBG { get; set; }
@@ -30,14 +40,16 @@ namespace YourAppName.Areas.Identity.Pages.Account
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
 
-            // Load additional data from your database for JMBG and Krvna Grupa
-            // Example:
-            // var korisnik = await _context.Korisnik.FindAsync(user.Id);
-            // if (korisnik != null)
-            // {
-            //     JMBG = korisnik.jmbg;
-            //     KrvnaGrupa = korisnik.krvnaGrupa;
-            // }
+            var korisnik = await _context.Korisnik
+                .FirstOrDefaultAsync(k => k.identityID == user.Id);
+
+            if (korisnik != null)
+            {
+                Email = user.Email; // Postavljanje e-mail adrese korisnika
+                PhoneNumber = korisnik.brojTelefona; // Postavljanje broja telefona korisnika
+                JMBG = korisnik.jmbg; // Postavljanje JMBG-a korisnika
+                KrvnaGrupa = korisnik.krvnaGrupa; // Postavljanje krvne grupe korisnika
+            }
 
             return Page();
         }
@@ -55,15 +67,16 @@ namespace YourAppName.Areas.Identity.Pages.Account
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
 
-            // Update additional data in your database for JMBG and Krvna Grupa
-            // Example:
-            // var korisnik = await _context.Korisnik.FindAsync(user.Id);
-            // if (korisnik != null)
-            // {
-            //     korisnik.jmbg = JMBG;
-            //     korisnik.krvnaGrupa = KrvnaGrupa;
-            //     await _context.SaveChangesAsync();
-            // }
+            var korisnik = await _context.Korisnik
+                .FirstOrDefaultAsync(k => k.identityID == user.Id);
+
+            if (korisnik != null)
+            {
+                korisnik.brojTelefona = PhoneNumber; // Ažuriranje broja telefona
+                korisnik.jmbg = JMBG; // Ažuriranje JMBG-a
+                korisnik.krvnaGrupa = KrvnaGrupa; // Ažuriranje krvne grupe
+                await _context.SaveChangesAsync();
+            }
 
             return RedirectToPage();
         }
