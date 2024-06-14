@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj": {}
+    "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj": {}
   },
   "projects": {
-    "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj": {
+    "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj",
+        "projectUniqueName": "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj",
         "projectName": "VitalFlow",
-        "projectPath": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj",
-        "packagesPath": "C:\\Users\\korisnik\\.nuget\\packages\\",
-        "outputPath": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\obj\\",
+        "projectPath": "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\VitalFlow.csproj",
+        "packagesPath": "C:\\Users\\HM_codex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HM_codex\\Documents\\GitHub\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HM_codex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -95,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
