@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using VitalFlow.Data;
 using VitalFlow.Models;
 
@@ -158,7 +159,7 @@ namespace VitalFlow.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateTermin(KrvnaGrupa KrvnaGrupa, Sale Sala, DateOnly Datum, string Vrijeme, int Kapacitet)
+        public async Task<IActionResult> CreateTermin(Sale Sala, DateOnly Datum, string Vrijeme)
         {
             if (ModelState.IsValid)
             {
@@ -166,34 +167,21 @@ namespace VitalFlow.Controllers
 
                 var user = await _userManager.GetUserAsync(User);
 
+
                 if (user == null)
                 {
                     _logger.LogError("Korisnik nije logovan.");
                     return RedirectToAction("Login", "Account");
                 }
 
-                // Normalizacija email adrese za pretragu
-                var normalizedEmail = user.Email.ToUpperInvariant();
-
-                var korisnik = await _context.Korisnik
-                                    .Where(k => k.email.ToUpper() == normalizedEmail)
-                                    .FirstOrDefaultAsync();
-
-                if (korisnik == null)
-                {
-                    _logger.LogWarning($"Korisnik s emailom '{user.Email}' nije pronađen.");
-                    return NotFound($"Korisnik s emailom '{user.Email}' nije pronađen.");
-                }
-
-                _logger.LogInformation($"Pronađen korisnik '{korisnik.imeIPrezime}' s emailom '{korisnik.email}'.");
-
                 var termin = new Termin
                 {
                     datum = Datum,
                     vrijeme = Vrijeme,
                     sala = Sala,
-                    jmbg = korisnik.jmbg,
-                    kapacitet = Kapacitet
+                    donorID = user.Id,
+                    email = user.Email,
+                    jmbg = ""
                 };
 
                 _context.Add(termin);
@@ -205,10 +193,10 @@ namespace VitalFlow.Controllers
                 {
                     terminID = termin.terminID,
                 };
+
                 _context.Add(hub);
                 await _context.SaveChangesAsync();
 
-                _logger.LogInformation($"Novi HUB je uspješno kreiran (ID: {hub.hubID}).");
 
                 _logger.LogInformation("Završena akcija CreateTermin.");
 
@@ -222,7 +210,7 @@ namespace VitalFlow.Controllers
                     _logger.LogError($"ModelState greška: {error.ErrorMessage}");
                 }
             }
-
+            
             _logger.LogError("ModelState nije validan.");
 
             return View("Index", await _context.Hub.ToListAsync());
