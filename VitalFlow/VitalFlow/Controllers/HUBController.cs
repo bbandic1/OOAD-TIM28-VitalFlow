@@ -1,22 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using VitalFlow.Data;
 using VitalFlow.Models;
 
 namespace VitalFlow.Controllers
 {
+    [Authorize]
     public class HUBController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly ILogger<HUBController> _logger;
 
-        public HUBController(ApplicationDbContext context)
+        public HUBController(ApplicationDbContext context, UserManager<IdentityUser> userManager, ILogger<HUBController> logger)
         {
             _context = context;
+            _userManager = userManager;
+            _logger = logger;
         }
 
         // GET: HUB
@@ -145,39 +150,88 @@ namespace VitalFlow.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool HUBExists(int id)
+        // GET: HUB/CreateTermin
+        public IActionResult getCreateTermin()
         {
-            return _context.Hub.Any(e => e.hubID == id);
+            return View();
         }
 
-        // POST: HUB/CreateTermin
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateTermin(string ImePrezime, string JMBG, KrvnaGrupa KrvnaGrupa, Sale Sala, DateTime Datum, int Kapacitet)
+        public async Task<IActionResult> CreateTermin(KrvnaGrupa KrvnaGrupa, Sale Sala, DateOnly Datum, string Vrijeme, int Kapacitet)
         {
             if (ModelState.IsValid)
             {
+                _logger.LogInformation("Pokrenuta akcija CreateTermin.");
+
+                var user = await _userManager.GetUserAsync(User);
+
+                if (user == null)
+                {
+                    _logger.LogError("Korisnik nije logovan.");
+                    return RedirectToAction("Login", "Account");
+                }
+
+                // Normalizacija email adrese za pretragu
+                var normalizedEmail = user.Email.ToUpperInvariant();
+
+                var korisnik = await _context.Korisnik
+                                    .Where(k => k.email.ToUpper() == normalizedEmail)
+                                    .FirstOrDefaultAsync();
+
+                if (korisnik == null)
+                {
+                    _logger.LogWarning($"Korisnik s emailom '{user.Email}' nije pronađen.");
+                    return NotFound($"Korisnik s emailom '{user.Email}' nije pronađen.");
+                }
+
+                _logger.LogInformation($"Pronađen korisnik '{korisnik.imeIPrezime}' s emailom '{korisnik.email}'.");
+
                 var termin = new Termin
                 {
                     datum = Datum,
+                    vrijeme = Vrijeme,
                     sala = Sala,
-                    jmbg = JMBG,
+                    jmbg = korisnik.jmbg,
                     kapacitet = Kapacitet
                 };
+
                 _context.Add(termin);
                 await _context.SaveChangesAsync();
+
+                _logger.LogInformation($"Novi termin je uspješno kreiran (ID: {termin.terminID}).");
 
                 var hub = new HUB
                 {
                     terminID = termin.terminID,
-                    zahtjevID = 0 // ili dodajte logiku za povezivanje sa zahtjevom
                 };
                 _context.Add(hub);
                 await _context.SaveChangesAsync();
 
+                _logger.LogInformation($"Novi HUB je uspješno kreiran (ID: {hub.hubID}).");
+
+                _logger.LogInformation("Završena akcija CreateTermin.");
+
                 return RedirectToAction(nameof(Index));
             }
+
+            foreach (var modelState in ModelState.Values)
+            {
+                foreach (var error in modelState.Errors)
+                {
+                    _logger.LogError($"ModelState greška: {error.ErrorMessage}");
+                }
+            }
+
+            _logger.LogError("ModelState nije validan.");
+
             return View("Index", await _context.Hub.ToListAsync());
+        }
+
+
+        private bool HUBExists(int id)
+        {
+            return _context.Hub.Any(e => e.hubID == id);
         }
     }
 }

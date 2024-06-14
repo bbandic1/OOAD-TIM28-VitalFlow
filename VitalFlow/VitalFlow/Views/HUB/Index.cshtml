@@ -38,7 +38,7 @@
 
         .heading-secondary {
             color: black; /* Crna boja za h2 sa klasom heading-secondary */
-            text-align: left; /* Levo poravnanje */
+            text-align: left; 
             margin-top: 30px;
         }
 
@@ -87,7 +87,7 @@
             padding: 12px 24px; /* Povećavanje paddinga za dugmiće */
             border: none;
             border-radius: 5px;
-            background-color: #ff0000; /* Crvena boja za dugmiće */
+            background-color: #dc3545; /* Crvena boja za dugmiće */
             color: #fff;
             cursor: pointer;
             margin-top: 20px; /* Povećan razmak između dugmeta i prethodnog elementa */
@@ -100,7 +100,7 @@
         }
 
             .btn-primary:hover, .btn-secondary:hover {
-                background-color: #cc0000; /* Tamnija crvena boja na hover */
+                background-color: #c82333; /* Tamnija crvena boja na hover */
             }
 
         .form-group select {
@@ -165,7 +165,23 @@
                 </div>
                 <div class="form-group">
                     <label for="Datum">Datum</label>
-                    <input type="date" class="form-control" id="Datum" name="Datum" required>
+                    <input type="date" class="form-control" id="Datum" name="Datum" min="@DateTime.Now.ToString("yyyy-MM-dd")" max="@DateTime.Now.AddYears(1).ToString("yyyy-MM-dd")" required>
+                </div>
+                <div class="form-group">
+                    <label for="Vrijeme">Vrijeme</label>
+                    <select class="form-control" id="Vrijeme" name="Vrijeme" required>
+                        @{
+                            for (int hour = 7; hour <= 20; hour++)
+                            {
+                                for (int minute = 0; minute < 60; minute += 30)
+                                {
+                                    <text>
+                                    <option value="@($"{hour:00}:{minute:00}")">@($"{hour:00}:{minute:00}")</option>
+                                    </text>
+                                }
+                            }
+                        }
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Prijavi Termin</button>
             </form>
@@ -173,7 +189,7 @@
 
         <div class="form-container">
             <div class="button-group">
-                <a asp-controller="Zaliha" asp-action="Index" class="btn btn-secondary">Stanje Zaliha</a>
+                <a asp-controller="Zaliha" asp-action="Index" class="btn btn-secondary">Stanje Zalihe</a>
                 <a asp-controller="Zahtjev" asp-action="Index" class="btn btn-secondary">Zahtjevi Klinike</a>
             </div>
         </div>

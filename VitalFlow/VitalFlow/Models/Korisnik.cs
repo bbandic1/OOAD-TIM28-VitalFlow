@@ -15,7 +15,7 @@ namespace VitalFlow.Models
 
         [Key]
         public int id {  get; set; }
-        public int zahtjevID {  get; set; }
+        public int? zahtjevID{  get; set; }
 
         public Korisnik() { }
     }

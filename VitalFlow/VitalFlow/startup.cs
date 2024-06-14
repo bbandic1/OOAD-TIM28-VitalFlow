@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 using VitalFlow.Data;
 using VitalFlow.Models;
@@ -31,6 +32,18 @@ namespace VitalFlow
             // Ostale konfiguracije
         }
 
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+    Host.CreateDefaultBuilder(args)
+        .ConfigureLogging(logging =>
+        {
+            logging.ClearProviders(); // Uklonite postojeće providere logova ako želite
+            logging.AddConsole(); // Dodajte ConsoleLoggerProvider
+            // Možete dodati i druge providere kao što su Debug, EventLog itd.
+        })
+        .ConfigureWebHostDefaults(webBuilder =>
+        {
+            webBuilder.UseStartup<startup>();
+        });
 
     }
 }
