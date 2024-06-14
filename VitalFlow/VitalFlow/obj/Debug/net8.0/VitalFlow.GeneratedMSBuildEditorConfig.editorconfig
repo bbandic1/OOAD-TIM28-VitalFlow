@@ -17,195 +17,195 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VitalFlow
 build_property.RootNamespace = VitalFlow
-build_property.ProjectDir = C:\Users\HM_codex\Documents\GitHub\OOAD-TIM28-VitalFlow\VitalFlow\VitalFlow\
+build_property.ProjectDir = E:\MyDownloads\ETFRI\4. Semestar\OOAD - Projekat\Git\OOAD-TIM28-VitalFlow\VitalFlow\VitalFlow\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HM_codex\Documents\GitHub\OOAD-TIM28-VitalFlow\VitalFlow\VitalFlow
+build_property.MSBuildProjectDirectory = E:\MyDownloads\ETFRI\4. Semestar\OOAD - Projekat\Git\OOAD-TIM28-VitalFlow\VitalFlow\VitalFlow
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Login.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Register.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/_ViewImports.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/_ViewStart.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Home/Index.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Home/Privacy.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Create.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFVCXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Delete.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFVCXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Details.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFVCXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Edit.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFVCXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Index.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/HUB/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFVCXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Kontakt/Index.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Kontakt/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udGFrdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Create.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Delete.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Details.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Edit.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Index.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Korisnik/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Onama/Index.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Onama/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT25hbWFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Shared/Error.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Shared/_LoginPartial.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Create.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybWluXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Delete.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybWluXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Details.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybWluXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Edit.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybWluXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Index.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybWluXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/PrikazPrijavljenihTermina.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Termin/PrikazPrijavljenihTermina.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybWluXFByaWthelByaWphdmxqZW5paFRlcm1pbmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Create.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Delete.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Details.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Edit.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Index.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zahtjev/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Create.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFsaWhhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Delete.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFsaWhhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Details.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFsaWhhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Edit.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFsaWhhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Index.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Zaliha/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFsaWhhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/_ViewImports.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/_ViewStart.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HM_codex/Documents/GitHub/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Shared/_Layout.cshtml]
+[E:/MyDownloads/ETFRI/4. Semestar/OOAD - Projekat/Git/OOAD-TIM28-VitalFlow/VitalFlow/VitalFlow/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-etu6dnztx5

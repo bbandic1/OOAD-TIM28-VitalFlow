@@ -137,10 +137,6 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <a asp-controller="Termin" asp-action="Index" class="btn btn-secondary">Prikaz Termina</a>
-    </div>
-
     <div class="vertical-container">
         <div class="form-container">
             <h2>Prijavi termin:</h2>
@@ -173,8 +169,16 @@
 
         <div class="form-container">
             <div class="button-group">
-                <a asp-controller="Zaliha" asp-action="Index" class="btn btn-secondary">Stanje Zalihe</a>
-                <a asp-controller="Zahtjev" asp-action="Index" class="btn btn-secondary">Zahtjevi Klinike</a>
+                @if (ViewBag.HasAccess)
+                {
+                    <a asp-controller="Zaliha" asp-action="Index" class="btn btn-secondary">Stanje Zalihe</a>
+                    <a asp-controller="Zahtjev" asp-action="Index" class="btn btn-secondary">Zahtjevi Klinike</a>
+                }
+                else
+                {
+                    <button class="btn btn-secondary" disabled>Stanje Zalihe</button>
+                    <button class="btn btn-secondary" disabled>Zahtjevi Klinike</button>
+                }
             </div>
         </div>
     </div>

@@ -79,8 +79,8 @@ namespace VitalFlow.Controllers
                 await _context.SaveChangesAsync();
 
                 // Send email notification to clinic
-                string subject = "New Blood Request";
-                string body = $"A new blood request has been submitted for blood type: {zahtjev.krvnaGrupa}. Please review the details in your email inbox.";
+                string subject = "Novi Zahtjev Krvi";
+                string body = $"Poštovani,\n\nPrimili smo novi zahtjev za donacijom krvi za krvnu grupu {zahtjev.krvnaGrupa}.\n\nMolimo Vas da nam omogućite nekoliko dana kako bismo obradili Vaš zahtjev. Nakon što organiziramo potrebne resurse, kontaktirat ćemo Vas putem e-maila s daljnjim uputama.\n\nHvala Vam na razumijevanju.\n\nS poštovanjem,\nVitalFlow";
 
                 await SendEmail(zahtjev.email, subject, body);
 

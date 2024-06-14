@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|e:\\mydownloads\\etfri\\4. semestar\\ooad - projekat\\git\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|e:\\mydownloads\\etfri\\4. semestar\\ooad - projekat\\git\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\views\\hub\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\views\\hub\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|e:\\mydownloads\\etfri\\4. semestar\\ooad - projekat\\git\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|solutionrelative:vitalflow\\controllers\\hubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC1FEB0D-DBD5-4EB0-A121-D61DC286C740}|VitalFlow\\VitalFlow.csproj|e:\\mydownloads\\etfri\\4. semestar\\ooad - projekat\\git\\ooad-tim28-vitalflow\\vitalflow\\vitalflow\\models\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -154,23 +154,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\HUB\\Index.cshtml",
-              "RelativeDocumentMoniker": "VitalFlow\\Views\\HUB\\Index.cshtml",
-              "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\HUB\\Index.cshtml",
-              "RelativeToolTip": "VitalFlow\\Views\\HUB\\Index.cshtml",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAAAKsAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T13:58:48.439Z"
             },
             {
               "$type": "Document",
@@ -186,16 +174,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HUBController.cs",
-              "DocumentMoniker": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\HUBController.cs",
-              "RelativeDocumentMoniker": "VitalFlow\\Controllers\\HUBController.cs",
-              "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\HUBController.cs",
-              "RelativeToolTip": "VitalFlow\\Controllers\\HUBController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAACwAAAA2AAAA",
+              "DocumentIndex": 16,
+              "Title": "KorisnikController.cs",
+              "DocumentMoniker": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\KorisnikController.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Controllers\\KorisnikController.cs",
+              "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\KorisnikController.cs",
+              "RelativeToolTip": "VitalFlow\\Controllers\\KorisnikController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T12:09:27.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T14:45:55.566Z"
             },
             {
               "$type": "Document",
@@ -211,15 +198,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "KorisnikController.cs",
-              "DocumentMoniker": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\KorisnikController.cs",
-              "RelativeDocumentMoniker": "VitalFlow\\Controllers\\KorisnikController.cs",
-              "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\KorisnikController.cs",
-              "RelativeToolTip": "VitalFlow\\Controllers\\KorisnikController.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "HUBController.cs",
+              "DocumentMoniker": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\HUBController.cs",
+              "RelativeDocumentMoniker": "VitalFlow\\Controllers\\HUBController.cs",
+              "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\HUBController.cs",
+              "RelativeToolTip": "VitalFlow\\Controllers\\HUBController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T14:45:55.566Z"
+              "WhenOpened": "2024-06-11T12:09:27.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\HUB\\Index.cshtml",
+              "RelativeDocumentMoniker": "VitalFlow\\Views\\HUB\\Index.cshtml",
+              "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Views\\HUB\\Index.cshtml*",
+              "RelativeToolTip": "VitalFlow\\Views\\HUB\\Index.cshtml*",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAALMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T13:58:48.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

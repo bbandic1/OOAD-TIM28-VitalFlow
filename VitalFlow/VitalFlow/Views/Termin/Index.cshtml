@@ -20,19 +20,18 @@
     <table class="table">
         <thead>
             <tr>
-                <th>@Html.DisplayNameFor(model => model.First().sala)</th>
-                <th>@Html.DisplayNameFor(model => model.First().datum)</th>
-                <th>@Html.DisplayNameFor(model => model.First().vrijeme)</th>
-                <th>Akcije</th>
+                <th>@Html.DisplayNameFor(model => model.First().terminID)</th>
+                <th>@Html.DisplayNameFor(model => model.First().donorID)</th>
+                <th>@Html.DisplayNameFor(model => model.First().email)</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@Html.DisplayFor(modelItem => item.sala)</td>
-                    <td>@Html.DisplayFor(modelItem => item.datum)</td>
-                    <td>@Html.DisplayFor(modelItem => item.vrijeme)</td>
+                    <td>@Html.DisplayFor(modelItem => item.terminID)</td>
+                    <td>@Html.DisplayFor(modelItem => item.donorID)</td>
+                    <td>@Html.DisplayFor(modelItem => item.email)</td>
                 </tr>
             }
         </tbody>

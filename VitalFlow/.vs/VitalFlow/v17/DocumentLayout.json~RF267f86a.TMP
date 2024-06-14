@@ -170,7 +170,8 @@
               "RelativeToolTip": "VitalFlow\\Views\\HUB\\Index.cshtml",
               "ViewState": "AQIAAJkAAAAAAAAAAAAAAKsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T13:58:48.439Z"
+              "WhenOpened": "2024-06-13T13:58:48.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -192,7 +193,7 @@
               "RelativeDocumentMoniker": "VitalFlow\\Controllers\\HUBController.cs",
               "ToolTip": "E:\\MyDownloads\\ETFRI\\4. Semestar\\OOAD - Projekat\\Git\\OOAD-TIM28-VitalFlow\\VitalFlow\\VitalFlow\\Controllers\\HUBController.cs",
               "RelativeToolTip": "VitalFlow\\Controllers\\HUBController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAACwAAAA2AAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAACwAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T12:09:27.217Z",
               "EditorCaption": ""

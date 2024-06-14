@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -28,6 +30,18 @@ namespace VitalFlow.Controllers
         // GET: HUB
         public async Task<IActionResult> Index()
         {
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var userRoles = await _userManager.GetRolesAsync(user);
+            bool hasAccess = userRoles.Contains("Administrator") || userRoles.Contains("Zaposlenik");
+
+            ViewBag.HasAccess = hasAccess;
+
             return View(await _context.Hub.ToListAsync());
         }
 
@@ -194,6 +208,19 @@ namespace VitalFlow.Controllers
 
                 _logger.LogInformation("Završena akcija CreateTermin.");
 
+                string subject = "Potvrda termina za doniranje krvi";
+                string body = $"Poštovani/Poštovana,\n\n" +
+                              "Sa zadovoljstvom Vas obavještavamo da je Vaš novi termin za doniranje krvi uspješno prijavljen:\n\n" +
+                              $"- Datum: {termin.datum}\n" +
+                              $"- Vrijeme: {termin.vrijeme}\n\n." +
+                              "Vaš doprinos je od velike važnosti za spašavanje života pacijenata koji su u potrebi. " +
+                              "Molimo Vas da se pridržavate odabranog termina kako bismo osigurali kontinuitet u zalihi krvi.\n\n" +
+                              "Hvala Vam na Vašoj humanosti i podršci.\n\n" +
+                              "Srdačan pozdrav,\n" +
+                              "VitalFlow";
+
+                await SendEmail(termin.email, subject, body);
+
                 return RedirectToAction(nameof(Index));
             }
 
@@ -209,6 +236,40 @@ namespace VitalFlow.Controllers
 
             return View("Index", await _context.Hub.ToListAsync());
         }
+
+        private async Task SendEmail(string toEmail, string subject, string body)
+        {
+            try
+            {
+                string fromEmail = "VitalFlow2024@gmail.com";
+                string appPassword = "rlhl dgtp gbdn filq"; // Replace with your app password
+
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587)
+                {
+                    Credentials = new NetworkCredential(fromEmail, appPassword),
+                    EnableSsl = true
+                };
+
+                MailMessage mailMessage = new MailMessage
+                {
+                    From = new MailAddress(fromEmail),
+                    Subject = subject,
+                    Body = body,
+                    IsBodyHtml = true
+                };
+
+                mailMessage.To.Add(toEmail);
+
+                await smtpClient.SendMailAsync(mailMessage);
+
+                _logger.LogInformation($"Email sent successfully to: {toEmail}");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error sending email: {ex.Message}");
+            }
+        }
+
 
 
         private bool HUBExists(int id)

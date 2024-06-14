@@ -102,8 +102,15 @@ namespace VitalFlow.Controllers
             {
                 foreach (var korisnik in users)
                 {
-                    string subject = "Critical Stock Level Notification";
-                    string body = $"Dear donor,\n\nThis is to inform you that the stock level for stock blood type ({krvnaGrupa}) is critically low.";
+                    string subject = "Važna obavijest: Kritično niska zaliha krvne grupe";
+                    string body = $"Poštovani/Poštovana,\n\n" +
+                                  "Ovim putem Vas obavještavamo da su zalihe krvne grupe " +  krvnaGrupa  + " trenutno na kritično niskom nivou. " +
+                                  "Kako bismo mogli pružiti neophodnu pomoć pacijentima kojima je vaša krvna grupa potrebna, " +
+                                  "molimo vas da, ukoliko ste u mogućnosti, razmislite o donaciji krvi u najbližem centru za transfuziju.\n\n" +
+                                  "Vaša pomoć može spasiti živote i svaka donacija je od izuzetne važnosti za našu zajednicu.\n\n" +
+                                  "Hvala Vam na vašoj nesebičnoj podršci i solidarnosti.\n\n" +
+                                  "Srdačan pozdrav,\n" +
+                                  "Vaš tim za transfuziju krvi";
 
                     await SendEmail(korisnik.Email, subject, body);
                 }
