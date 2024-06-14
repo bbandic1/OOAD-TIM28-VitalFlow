@@ -78,10 +78,6 @@ namespace VitalFlow.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
 
             [Required]
-            [Display(Name = "Broj Telefona")]
-            public string BrojTelefona { get; set; }
-
-            [Required]
             [Display(Name = "Datum Rođenja")]
             [DataType(DataType.Date)]
             public DateOnly DatumRođenja { get; set; }
@@ -123,7 +119,7 @@ namespace VitalFlow.Areas.Identity.Pages.Account
                         imeIPrezime = Input.ImeIPrezime,
                         email = Input.Email,
                         password = "",
-                        brojTelefona = Input.BrojTelefona,
+                        brojTelefona = "",
                         datumRođenja = Input.DatumRođenja,
                         jmbg = Input.Jmbg,
                         krvnaGrupa = Input.KrvnaGrupa,

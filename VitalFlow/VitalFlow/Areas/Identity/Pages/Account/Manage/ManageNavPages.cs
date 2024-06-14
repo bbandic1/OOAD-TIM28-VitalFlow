@@ -72,7 +72,7 @@ namespace YourAppName.Areas.Identity.Pages.Account
 
             if (korisnik != null)
             {
-                korisnik.brojTelefona = PhoneNumber; // Ažuriranje broja telefona
+                korisnik.brojTelefona = user.PhoneNumber; // Ažuriranje broja telefona
                 korisnik.jmbg = JMBG; // Ažuriranje JMBG-a
                 korisnik.krvnaGrupa = KrvnaGrupa; // Ažuriranje krvne grupe
                 await _context.SaveChangesAsync();

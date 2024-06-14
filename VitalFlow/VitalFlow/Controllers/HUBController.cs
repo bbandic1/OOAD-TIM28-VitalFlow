@@ -159,7 +159,7 @@ namespace VitalFlow.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateTermin(Sale Sala, DateOnly Datum, string Vrijeme)
+        public async Task<IActionResult> CreateTermin(Sale Sala, DateOnly Datum, Vrijeme vrijeme)
         {
             if (ModelState.IsValid)
             {
@@ -177,11 +177,13 @@ namespace VitalFlow.Controllers
                 var termin = new Termin
                 {
                     datum = Datum,
-                    vrijeme = Vrijeme,
+                    vrijeme = vrijeme,
                     sala = Sala,
                     donorID = user.Id,
                     email = user.Email,
+                    kapacitet=3,
                     jmbg = ""
+
                 };
 
                 _context.Add(termin);

@@ -4,50 +4,38 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.datum)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.sala)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.jmbg)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.kapacitet)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.datum)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.sala)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.jmbg)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.kapacitet)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.terminID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.terminID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.terminID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - VitalFlow</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/VitalFlow.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <h2 class="heading-secondary">Prijavljeni termini:</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().sala)</th>
+                <th>@Html.DisplayNameFor(model => model.First().datum)</th>
+                <th>@Html.DisplayNameFor(model => model.First().vrijeme)</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.sala)</td>
+                    <td>@Html.DisplayFor(modelItem => item.datum)</td>
+                    <td>@Html.DisplayFor(modelItem => item.vrijeme)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

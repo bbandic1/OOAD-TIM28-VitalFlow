@@ -138,7 +138,7 @@
 </head>
 <body>
     <div class="container">
-        <a href="@Url.Action("PrikazPrijavljenihTermina", "Termin")" class="btn-view-termini">Prikaz prijavljenih termina</a>
+        <a asp-controller="Termin" asp-action="Index" class="btn btn-secondary">Prikaz Termina</a>
     </div>
 
     <div class="vertical-container">
@@ -161,16 +161,9 @@
                 <div class="form-group">
                     <label for="Vrijeme">Vrijeme</label>
                     <select class="form-control" id="Vrijeme" name="Vrijeme" required>
-                        @{
-                            for (int hour = 7; hour <= 20; hour++)
-                            {
-                                for (int minute = 0; minute < 60; minute += 30)
-                                {
-                                    <text>
-                                    <option value="@($"{hour:00}:{minute:00}")">@($"{hour:00}:{minute:00}")</option>
-                                    </text>
-                                }
-                            }
+                        @foreach (var vrijeme in Enum.GetValues(typeof(VitalFlow.Models.Vrijeme)))
+                        {
+                            <option value="@vrijeme">@vrijeme</option>
                         }
                     </select>
                 </div>
