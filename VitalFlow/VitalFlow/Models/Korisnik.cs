@@ -11,7 +11,7 @@ namespace VitalFlow.Models
         public DateOnly datumRođenja { get; set; }
         public string jmbg {  get; set; }
         public KrvnaGrupa krvnaGrupa {  get; set; }
-        public int brojOtkazivanja { get; set; }
+        public int? brojOtkazivanja { get; set; }
 
         [Key]
         public int id {  get; set; }

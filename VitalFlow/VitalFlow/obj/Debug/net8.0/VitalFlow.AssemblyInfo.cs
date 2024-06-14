@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VitalFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84733f92f9ccd8ee26df110e3a202d370a8b858f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd265d70ce9b35217bc7407683a24732e50ac3c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("VitalFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VitalFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
